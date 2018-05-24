@@ -22,6 +22,12 @@ namespace LabWork1.Input
                 array[i] = rnd.Next(LowerLimit,UpperLimit);
             }
 
+            for(int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
+
             Algorithms algo = new Algorithms(array);
             algo.Algorithm();
 

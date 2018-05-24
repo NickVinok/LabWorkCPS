@@ -17,6 +17,12 @@ namespace LabWork1.Input
                 array[i] = inputValidation.CorrectIntInput("Enter number: ");
             }
 
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
+
             Algorithms algo = new Algorithms(array);
             algo.Algorithm();
 

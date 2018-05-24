@@ -92,19 +92,10 @@ namespace LabWork1.FileWorks
                 }
                 streamWriter.WriteLine();
 
-                streamWriter.Write("Odd array: ");
-                for (int i = 0; i < algo.GetOddArray().Length; i++)
-                {
-                    streamWriter.Write(algo.GetOddArray()[i] + " ");
-                }
-                streamWriter.WriteLine();
-                streamWriter.Write("Even array: ");
-                for (int i = 0; i < algo.GetEvenArray().Length; i++)
-                {
-                    streamWriter.Write(algo.GetEvenArray()[i] + " ");
-                }
-                streamWriter.WriteLine();
+                streamWriter.WriteLine("Positive numbers: {0}\nNegative numbers: {1}\nAverage of numbers in array: {2}", algo.GetNumberOfPositives(),
+                    algo.GetNumberOfNegatives(), algo.GetAverage());
 
+                
 
                 streamWriter.Close();
                 fileStream.Close();

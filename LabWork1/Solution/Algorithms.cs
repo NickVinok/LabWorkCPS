@@ -2,11 +2,11 @@
 
 namespace LabWork1.Solution
 {
-    class Algorithms : IAlgorithms
+    public class Algorithms : IAlgorithms
     { 
         private int[] array;
-        public int numberOfNegatives;
         public int numberOfPositives;
+        public int numberOfNegatives;
         public double average;
         public void Algorithm()
         {

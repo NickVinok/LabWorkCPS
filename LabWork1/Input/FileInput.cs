@@ -34,17 +34,20 @@ namespace LabWork1.Input
                 }
             }
 
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
+
             Algorithms algo = new Algorithms(array);
             algo.Algorithm();
 
-            algo.printArr();
-
             Console.Write(
-                "Sum of odd numbers - {0}\nSum of even numbers - {1}\n", algo.getOddSum(), algo.getEvenSum());
+                "Number of positive elements - {0}\nNumber of negative elements - {1}\nAverage of all teh elements - {2}\n",
+                algo.GetNumberOfPositives(), algo.GetNumberOfNegatives(), algo.GetAverage());
 
-
-            streamReader.Close();
-            Confirmation confirmation = new Confirmation();     
+            Confirmation confirmation = new Confirmation();
             if (confirmation.Confirm("Do you want to save the results? Y/N"))
             {
                 fileWork.WriteIntoTheFile(algo);

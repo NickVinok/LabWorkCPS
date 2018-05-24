@@ -51,7 +51,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LabWork12.LabWork1</StartupObject>
+    <StartupObject>LabWork1.LabWork1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabWork1.Solution
 {
-    interface IAlgorithms
+    public interface IAlgorithms
     {
         void Algorithm();
     }
